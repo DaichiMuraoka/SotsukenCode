@@ -57,8 +57,8 @@ function regist_user(string $data)
 function arrow_register(string $data)
 {
     $pdo = connect_db();
-    $ky = 'FtkX8zyOIXlFaqdJ'; // 16 * 8 = 256 bit key
-	$iv = '4JQZRZNIng8TCy0O'; // 32 * 8 = 256 bit iv
+    $ky = '***'; // 16 * 8 = 128 bit key
+	$iv = '***'; // 16 * 8 = 128 bit iv
     $pw = openssl_decrypt($data, 'AES-128-CBC', $ky, 0, $iv);
     try { $stmt = $pdo->query("SELECT * FROM regist"); }
     catch(PDOException $e) { var_dump($e->getMessage()); }

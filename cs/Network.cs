@@ -9,7 +9,7 @@ using System.Security.Cryptography;
 
 public class Network
 {
-    private const string ACCESS_URL = "https://nianagoblog.com/sotsuken/server_access.php";
+    private const string ACCESS_URL = "***";
 
     public static bool online = false;
 
@@ -315,8 +315,8 @@ public class Network
     public class AES
     {
         //'Shared 256 bit Key and IV here
-        private const string sKy = "FtkX8zyOIXlFaqdJ";
-        private const string sIV = "4JQZRZNIng8TCy0O";
+        private const string sKy = "***";
+        private const string sIV = "***";
 
         //暗号化
         public static string EncryptRJ128(string prm_text_to_encrypt)
